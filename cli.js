@@ -7,7 +7,8 @@ const argv = require('yargs')
   .demandOption(['s','d'])
   .argv;
 
-const dest = (argv.d.substr(0,2) === './') ? __dirname + '/' + argv.d.slice(2,argv.d.length) : argv.d;
+//allow directory to be prefixed with './' for cwd
+const dest = (argv.d.substr(0,2) === './') ? process.cwd() + '/' + argv.d.slice(2,argv.d.length) : argv.d;
 
 const fs = require('fs');
 const http = require('http');
