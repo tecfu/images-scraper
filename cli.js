@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+"use strict";
+
 const argv = require('yargs')
   .usage('Usage: $0 -s [string] -d [string] -e [string]')
   .demandOption(['s','d'])
