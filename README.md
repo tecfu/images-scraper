@@ -4,7 +4,9 @@ This a simple way to scrape Google/Bing images using Nightmare and not be depend
 
 # Cli Installation
 
-```npm i -g tecfu/images-scraper#master```
+```
+sudo npm i -g tecfu/images-scraper 
+```
 
 # Example
 
